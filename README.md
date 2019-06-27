@@ -30,7 +30,7 @@ Usage
     require 'rubygems'
     require 'options_library'
 
-    call = Option::Call.new
+    call = OptionLib::Call.new
     call.underlying = 95.40  # spot price of the underlying
     call.strike = 90.00  # strike price of option
     call.time = 0.015 # time in years
@@ -47,7 +47,7 @@ Usage
 
     # Or go straight at the Calculator methods
     # Option::Calculator.price_call( underlying, strike, time, interest, sigma, dividend )
-    call_price = Option::Calculator.price_call( 94.5, 90.5, 0.015, 0.01, 0.4875, 0.0 ) 
+    call_price = OptionLib::Calculator.price_call( 94.5, 90.5, 0.015, 0.01, 0.4875, 0.0 ) 
 
 Testing
 -------
