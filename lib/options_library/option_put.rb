@@ -8,6 +8,6 @@ module OptionLib
     def initialize
       super(:put)
     end
-    
+
   end
 end

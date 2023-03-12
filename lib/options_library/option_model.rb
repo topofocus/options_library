@@ -9,10 +9,10 @@ module OptionLib
     KNOWN_OPTION_TYPES = [:call, :put]
 
     # A map to define methods to call based on option_type
-    CALC_PRICE_METHODS  = { :call=>Calculator.method('price_call'),       :put=>Calculator.method('price_put') }
-    CALC_DELTA_METHODS  = { :call=>Calculator.method('delta_call'),       :put=>Calculator.method('delta_put') }
-    CALC_THETA_METHODS  = { :call=>Calculator.method('theta_call'),       :put=>Calculator.method('theta_put') }
-    IMPLIED_VOL_METHODS = { :call=>Calculator.method('implied_vol_call'), :put=>Calculator.method('implied_vol_put') }
+    CALC_PRICE_METHODS  = { call: Calculator.method('price_call'),       put: Calculator.method('price_put') }
+    CALC_DELTA_METHODS  = { call: Calculator.method('delta_call'),       put: Calculator.method('delta_put') }
+    CALC_THETA_METHODS  = { call: Calculator.method('theta_call'),       put: Calculator.method('theta_put') }
+    IMPLIED_VOL_METHODS = { call: Calculator.method('implied_vol_call'), put: Calculator.method('implied_vol_put') }
 
     attr_accessor :underlying, :strike, :time, :interest, :sigma, :dividend, :option_type
 
